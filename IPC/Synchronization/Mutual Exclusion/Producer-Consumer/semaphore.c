@@ -6,7 +6,7 @@
 #include <time.h>
 #include <string.h>
 
-int producer_count, consumer_count, empty_count, buffer_length, *buffer, buffer_pos=-1;
+int producer_count, consumer_count, buffer_length, *buffer, buffer_pos=-1;
 sem_t buffer_mutex, empty_count, full_count;
 pthread_t *producers, *consumers;
 
